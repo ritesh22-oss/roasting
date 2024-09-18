@@ -1,0 +1,97 @@
+/* styles.css */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffebcd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadingText {
+    font-size: 24px;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+.loadingBar {
+    width: 80%;
+    background-color: #fff;
+    border: 2px solid #ff4500;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    height: 20px;
+}
+
+.bar {
+    width: 0%;
+    height: 100%;
+    background-color: #ff4500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: width 3s ease;
+}
+
+#jokesSection {
+    margin: 20px;
+}
+
+.joke {
+    background-color: #fff;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4500;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nextButton {
+    display: block;
+    margin: 20px auto;
+}
+
+#roastMore p {
+    font-size: 18px;
+    color: #ff6347;
+}
+
+#sorryScreen p {
+    font-size: 20px;
+    color: #228b22;
+}
